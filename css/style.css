@@ -4428,7 +4428,7 @@ dl dd {
   line-height: 30px;
 }
 
-.modal,
+.modal-bravend,
 .feedback {
   position: relative;
   overflow: visible;
@@ -4440,27 +4440,27 @@ dl dd {
   line-height: 45px;
   background-color: #000;
 }
-.modal [class*=titulo],
+.modal-bravend [class*=titulo],
 .feedback [class*=titulo] {
   margin-bottom: 30px;
   font-size: 36px;
   font-weight: bold;
 }
-.modal h5,
+.modal-bravend h5,
 .feedback h5 {
   font-weight: 500;
   margin-bottom: 24px;
 }
-.modal p:last-child,
+.modal-bravend p:last-child,
 .feedback p:last-child {
   margin-bottom: 40px;
 }
-.modal .wrap-icone,
+.modal-bravend .wrap-icone,
 .feedback .wrap-icone {
   position: relative;
   margin-bottom: 32px;
 }
-.modal .wrap-icone:before,
+.modal-bravend .wrap-icone:before,
 .feedback .wrap-icone:before {
   display: block;
   content: "";
@@ -4470,7 +4470,7 @@ dl dd {
   width: calc(100% + (2*48px));
   height: 112px;
 }
-.modal .wrap-icone .circle,
+.modal-bravend .wrap-icone .circle,
 .feedback .wrap-icone .circle {
   display: flex;
   align-items: center;
@@ -4481,46 +4481,46 @@ dl dd {
   height: 128px;
   margin: 0 auto;
 }
-.modal .wrap-icone .circle i,
+.modal-bravend .wrap-icone .circle i,
 .feedback .wrap-icone .circle i {
   font-size: 64px;
   color: #713ABE;
 }
-.modal.positivo .wrap-icone .circle i,
+.modal-bravend.positivo .wrap-icone .circle i,
 .feedback.positivo .wrap-icone .circle i {
   color: #1FAD2D;
 }
-.modal.negativo .wrap-icone:before,
+.modal-bravend.negativo .wrap-icone:before,
 .feedback.negativo .wrap-icone:before {
   background-color: #DB2531;
 }
-.modal.negativo .wrap-icone .circle,
+.modal-bravend.negativo .wrap-icone .circle,
 .feedback.negativo .wrap-icone .circle {
   background-color: #FDEBE4;
   border-color: #DB2531;
 }
-.modal.negativo .wrap-icone .circle i,
+.modal-bravend.negativo .wrap-icone .circle i,
 .feedback.negativo .wrap-icone .circle i {
   color: #DB2531;
 }
-.modal.neutro .wrap-icone:before,
+.modal-bravend.neutro .wrap-icone:before,
 .feedback.neutro .wrap-icone:before {
   background-color: #F28E02;
 }
-.modal.neutro .wrap-icone .circle,
+.modal-bravend.neutro .wrap-icone .circle,
 .feedback.neutro .wrap-icone .circle {
   background-color: #FEF4D8;
   border-color: #F28E02;
 }
-.modal.neutro .wrap-icone .circle i,
+.modal-bravend.neutro .wrap-icone .circle i,
 .feedback.neutro .wrap-icone .circle i {
   color: #F28E02;
 }
-.modal.img-full,
+.modal-bravend.img-full,
 .feedback.img-full {
   padding: 0;
 }
-.modal.img-full .wrap-img-full,
+.modal-bravend.img-full .wrap-img-full,
 .feedback.img-full .wrap-img-full {
   background-repeat: no-repeat;
   background-size: cover;
@@ -4528,8 +4528,113 @@ dl dd {
   width: 100%;
   height: 260px;
 }
-.modal.img-full .wrap-conteudo,
+.modal-bravend.img-full .wrap-conteudo,
 .feedback.img-full .wrap-conteudo {
+  padding: 32px 48px 48px;
+}
+
+.modal,
+.feedback-bravend {
+  position: relative;
+  overflow: visible;
+  padding: 48px;
+  color: #FFC800;
+  text-align: center;
+  font-family: "Brandon Grotesque", sans-serif, Arial;
+  font-size: 35px;
+  line-height: 45px;
+  background-color: #fff;
+}
+.modal [class*=titulo],
+.feedback-bravend [class*=titulo] {
+  margin-bottom: 30px;
+  font-size: 36px;
+  font-weight: bold;
+}
+.modal h5,
+.feedback-bravend h5 {
+  font-weight: 500;
+  margin-bottom: 24px;
+}
+.modal p:last-child,
+.feedback-bravend p:last-child {
+  margin-bottom: 40px;
+}
+.modal .wrap-icone,
+.feedback-bravend .wrap-icone {
+  position: relative;
+  margin-bottom: 32px;
+}
+.modal .wrap-icone:before,
+.feedback-bravend .wrap-icone:before {
+  display: block;
+  content: "";
+  position: absolute;
+  top: -48px;
+  left: -48px;
+  width: calc(100% + (2*48px));
+  height: 112px;
+}
+.modal .wrap-icone .circle,
+.feedback-bravend .wrap-icone .circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 2;
+  width: 165px;
+  height: 128px;
+  margin: 0 auto;
+}
+.modal .wrap-icone .circle i,
+.feedback-bravend .wrap-icone .circle i {
+  font-size: 64px;
+  color: #713ABE;
+}
+.modal.positivo .wrap-icone .circle i,
+.feedback-bravend.positivo .wrap-icone .circle i {
+  color: #1FAD2D;
+}
+.modal.negativo .wrap-icone:before,
+.feedback-bravend.negativo .wrap-icone:before {
+  background-color: #DB2531;
+}
+.modal.negativo .wrap-icone .circle,
+.feedback-bravend.negativo .wrap-icone .circle {
+  background-color: #FDEBE4;
+  border-color: #DB2531;
+}
+.modal.negativo .wrap-icone .circle i,
+.feedback-bravend.negativo .wrap-icone .circle i {
+  color: #DB2531;
+}
+.modal.neutro .wrap-icone:before,
+.feedback-bravend.neutro .wrap-icone:before {
+  background-color: #F28E02;
+}
+.modal.neutro .wrap-icone .circle,
+.feedback-bravend.neutro .wrap-icone .circle {
+  background-color: #FEF4D8;
+  border-color: #F28E02;
+}
+.modal.neutro .wrap-icone .circle i,
+.feedback-bravend.neutro .wrap-icone .circle i {
+  color: #F28E02;
+}
+.modal.img-full,
+.feedback-bravend.img-full {
+  padding: 0;
+}
+.modal.img-full .wrap-img-full,
+.feedback-bravend.img-full .wrap-img-full {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 260px;
+}
+.modal.img-full .wrap-conteudo,
+.feedback-bravend.img-full .wrap-conteudo {
   padding: 32px 48px 48px;
 }
 
@@ -6698,6 +6803,8 @@ body::-webkit-scrollbar-thumb,
   align-items: stretch; /* Estende os itens verticalmente */
   margin-bottom: 20px;
   max-width: 100%;
+  position: relative;
+  z-index: 100;
 }
 .bravend-card .icone-bravend {
   flex: 0.4; /* Faz com que o item cresça proporcionalmente */
@@ -6724,6 +6831,7 @@ body::-webkit-scrollbar-thumb,
   justify-content: center;
   align-items: center;
   padding: 3rem;
+  z-index: 200;
 }
 .bravend-card .card-template-bravend .bravend-paragraphy-card {
   font-size: 2.1rem;
@@ -6753,6 +6861,8 @@ body::-webkit-scrollbar-thumb,
   align-items: stretch; /* Estende os itens verticalmente */
   margin-bottom: 20px;
   max-width: 100%;
+  position: relative;
+  z-index: 200;
 }
 .bravend-card-2 .icone-bravend {
   flex: 0.4; /* Faz com que o item cresça proporcionalmente */
