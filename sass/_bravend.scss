@@ -1,0 +1,1841 @@
+body::-webkit-scrollbar-track,
+*::-webkit-scrollbar-track {
+  background-color: #000000;
+  width: 10px;
+}
+
+body::-webkit-scrollbar,
+*::-webkit-scrollbar {
+  background-color: #000000;
+  width: 10px;
+}
+
+body::-webkit-scrollbar-thumb,
+*::-webkit-scrollbar-thumb {
+  background-color: #E2D8D9;
+  border-radius: 0px;
+}
+
+* {
+  outline: none !important;
+}
+
+.bravend-title{
+  font-family: $font-family-base-bravend;
+  font-size: 3.65rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin-bottom: 1.2rem;
+  line-height: 70px;
+
+  @include small-only{
+    font-size: 1.62rem;
+    line-height: 30px;
+    text-align: center;
+  }
+}
+
+.icon-asterisk {
+  position: absolute;
+  width: 82px;
+  height: 79px;
+  left: 1675px;
+  top: 483px;
+  animation: zoomInOut 1s infinite alternate; /* Adicione uma animação chamada "zoomInOut" */
+
+  @include small-only{
+    display: none;
+  }
+}
+
+.icon-cruz {
+  position: absolute;
+  width: 82px;
+  height: 79px;
+  left: 1522px;
+  top: 759px;
+  animation: zoomInOut 1s infinite alternate; /* Adicione a mesma animação "zoomInOut" com uma duração diferente */
+
+  @include small-only{
+    display: none;
+  }
+
+}
+
+@keyframes zoomInOut {
+  0% {
+      transform: scale(1); /* Tamanho inicial */
+  }
+  100% {
+      transform: scale(1.2); /* Tamanho final (zoom in) */
+  }
+}
+
+
+.align-itens{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bravend-title-2{
+  font-family: $font-family-base-bravend;
+  font-size: 3rem;
+  font-weight: 400;
+  margin-bottom: 1.2rem;
+  line-height: 70px;
+
+  @include small-only{
+    font-size: 1.62rem;
+    line-height: 30px;
+  }
+}
+
+.bravend-title-encerramento{
+  font-family: $font-family-base-bravend;
+  font-size: 3.12rem;
+  font-weight: 400;
+  margin-bottom: 1.2rem;
+  line-height: 50px;
+  text-transform: uppercase;
+}
+
+.bravend-paragraphy{
+  font-family: $font-family-base-bravend;
+  font-size: 2.18rem;
+  font-weight: 300;
+  margin-bottom: 1.2rem;
+  line-height: 45px;
+
+  @include small-only{
+    font-size: 1.3rem;
+    line-height: 30px;
+  }
+
+}
+
+.bravend-paragraphy-fim{
+  font-family: $font-family-base-bravend;
+  font-size: 2.18rem;
+  font-weight: 300;
+  margin-bottom: 1.2rem;
+  line-height: 45px;
+
+  @include small-only{
+    font-size: 1.3rem;
+    line-height: 30px;
+    text-align: center;
+  }
+}
+
+.bravend-paragraphy-2{
+  font-family: $font-family-base-bravend;
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 45px;
+
+  @include small-only{
+    font-size: 1.3rem;
+    line-height: 30px;
+  }
+}
+
+.bravend-paragraphy-3{
+  font-family: $font-family-base-bravend;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 26px;
+
+  @include small-only{
+    font-size: 1.3rem;
+  }
+}
+
+.bravend-paragraphy-encerramento{
+  font-family: $font-family-base-bravend;
+  font-size: 2.18rem;
+  font-weight: 300;
+  line-height: 45px;
+  text-transform: uppercase;
+}
+
+  // .video-wrapper-bravend{
+  //   width: auto;
+  //   // max-width: 850px;
+  //   height: auto;
+  //   overflow: hidden;
+  //   border-bottom-left-radius: 448px;
+  //   border-top-left-radius: 448px;
+  //   position: relative;
+  //   float: left;
+  //   display: -webkit-box;
+  //   display: -ms-flexbox;
+  //   display: flex;
+  //   z-index: 2;
+
+  //   &.right{
+  //     width: auto;
+  //     // max-width: 850px;
+  //     height: auto;
+  //     overflow: hidden;
+  //     border-bottom-right-radius: 566px;
+  //     border-top-left-radius: 155px;
+  //     position: relative;
+  //     float: right;
+  //     display: -webkit-box;
+  //     display: -ms-flexbox;
+  //     display: flex;
+  //     z-index: 2;
+  //   }
+  // }
+
+  .video-wrapper-bravend{
+    width: auto;
+    // max-width: 850px;
+    height: auto;
+    overflow: hidden;
+    border-bottom-left-radius: 448px;
+    border-top-left-radius: 448px;
+    position: relative;
+    float: left;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    z-index: 2;
+
+    &.right{
+      width: auto;
+      // max-width: 850px;
+      height: auto;
+      overflow: hidden;
+      border-bottom-right-radius: 566px;
+      border-top-left-radius: 155px;
+      position: relative;
+      float: right;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      z-index: 2;
+
+      @include small-only{
+        border-radius: 6rem;
+        float: none;
+        margin: auto;
+        margin-bottom: 20px;
+      }
+    }
+
+    @include small-only{
+      border-radius: 6rem;
+      float: none;
+      margin: auto;
+    }
+  }
+
+  .video-background{
+    position: absolute;
+    top: 4%;
+    left: 50%;
+    
+    z-index: 1;
+
+
+    &.right{
+      position: absolute;
+      top: 3%;
+      left: -49%;
+      z-index: 1;
+      width: 100%;
+      height: 72%;
+    }
+
+    @include small-only{
+      display: none;
+    }
+  }
+
+  .badge-challenger{
+    position: relative;
+    // width: 100%;
+    height: 100%;
+    font-family: Brandon Grotesque, sans-serif, Arial;
+
+    @include small-only{
+      padding: 20px;
+    }
+
+    .loadBadge{
+      position: absolute;
+      top: 44%;
+      left: 39%;
+      animation: spin 2s linear infinite;
+
+      @include small-only{
+        top: 43%;
+        left: 45%;
+        width: 40px;
+      }
+    }
+
+    @keyframes spin {
+      0% { transform: rotate(0deg); } /* 0 graus de rotação no início da animação */
+      100% { transform: rotate(360deg); } /* 360 graus de rotação no final da animação */
+    }
+
+    .loadBadge-4{
+      position: absolute;
+      top: 38%;
+      left: 45%;
+      animation: spin 2s linear infinite;
+
+      @include small-only{
+        top: 39%;
+        left: 46%;
+        width: 28px;
+      }
+    }
+
+    @keyframes spin {
+      0% { transform: rotate(0deg); } /* 0 graus de rotação no início da animação */
+      100% { transform: rotate(360deg); } /* 360 graus de rotação no final da animação */
+    }
+  }
+
+  .badge-challenger-2{
+    position: relative;
+    // width: 100%;
+    height: 100%;
+    font-family: Brandon Grotesque, sans-serif, Arial;
+    @include small-only{
+      width: 500px;
+    }
+
+    .loadBadge{
+      position: absolute;
+      top: 40%;
+      left: 47%;
+      animation: spin 2s linear infinite;
+
+      @include small-only{
+        top: 38%;
+        left: 46%;
+        width: 35px;
+      }
+
+    }
+
+    @keyframes spin {
+      0% { transform: rotate(0deg); } /* 0 graus de rotação no início da animação */
+      100% { transform: rotate(360deg); } /* 360 graus de rotação no final da animação */
+    }
+  }
+
+  .box-challenge{
+    pointer-events: none;
+    width: 100%;
+    height: 100%;
+    max-width: 799px;
+    max-height: 39%;
+    border-top: 5px solid #FFC800;
+    border-right: 5px solid #FFC800;
+    position: absolute;
+    top: 6%;
+    left: 61%;
+    transform: translateX(-50%);
+    z-index: 2;
+
+    .bottom-line{
+      width: 100%;
+      max-width: 40%;
+      height: 5px;
+      background-color: #FFC800;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+
+      &.bottom-line::before{
+        content: "";
+        position: absolute;
+        top: -13px;
+        left: -26px;
+        width: 30px;
+        height: 30px;
+        background-image: url("../data/imagens/bravend/circleYellow.svg");
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+    }
+
+    @include small-only{
+      display: none;
+    }
+
+  }
+
+  .box-challenge-2{
+    pointer-events: none;
+    width: 100%;
+    height: 100%;
+    max-width: 871px;
+    max-height: 38%;
+    border-top: 5px solid #FFC800;
+    border-right: 5px solid #FFC800;
+    position: absolute;
+    top: 6%;
+    left: 61%;
+    transform: translateX(-50%);
+    z-index: 2;
+
+    .bottom-line{
+      width: 100%;
+      max-width: 40%;
+      height: 5px;
+      background-color: #FFC800;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+
+      &.bottom-line::before{
+        content: "";
+        position: absolute;
+        top: -13px;
+        left: -26px;
+        width: 30px;
+        height: 30px;
+        background-image: url("../data/imagens/bravend/circleYellow.svg");
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+    }
+
+    @include small-only{
+      display: none;
+    }
+
+  }
+
+  .box-challenge-3{
+    pointer-events: none;
+    width: 44%;
+    height: 28%;
+    max-width: 910px;
+    max-height: 29%;
+    border-top: 5px solid #FFC800;
+    border-right: 5px solid #FFC800;
+    position: absolute;
+    top: 6%;
+    left: 66%;
+    transform: translateX(-50%);
+    z-index: 2;
+
+    .bottom-line{
+      width: 100%;
+      max-width: 40%;
+      height: 5px;
+      background-color: #FFC800;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+
+      &.bottom-line::before{
+        content: "";
+        position: absolute;
+        top: -13px;
+        left: -26px;
+        width: 30px;
+        height: 30px;
+        background-image: url("../data/imagens/bravend/circleYellow.svg");
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+    }
+
+    @include small-only{
+      display: none;
+    }
+
+  }
+
+  .box-challenge-4{
+    pointer-events: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    max-width: 748px;
+    max-height: 34%;
+    border-top: 5px solid #FFC800;
+    border-right: 5px solid #FFC800;
+    position: absolute;
+    top: 6%;
+    left: 61%;
+    transform: translateX(-50%);
+    z-index: 2;
+
+    .bottom-line{
+      width: 100%;
+      max-width: 40%;
+      height: 5px;
+      background-color: #FFC800;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+
+      &.bottom-line::before{
+        content: "";
+        position: absolute;
+        top: -13px;
+        left: -26px;
+        width: 30px;
+        height: 30px;
+        background-image: url("../data/imagens/bravend/circleYellow.svg");
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+    }
+
+    @include small-only{
+      display: none;
+    }
+
+  //  @media screen and (max-width: 1199.98px) {
+  //   pointer-events: none;
+  //   width: 100%;
+  //   height: 100%;
+  //   max-width: 681px;
+  //   max-height: 34%;
+  //   border-top: 5px solid #FFC800;
+  //   border-right: 5px solid #FFC800;
+  //   position: absolute;
+  //   top: 108px;
+  //   left: 417px;
+  //   z-index: 2;
+  //  }
+
+  }
+
+  .badge-wrapper{
+    position: relative;
+
+    .loadBadge2{
+      position: absolute;
+      top: 43%;
+      left: 72%;
+      animation: spin 2s linear infinite;
+
+      @include small-only{
+        display: none;
+      }
+    }
+
+    .banner-video{
+      @include small-only{
+        display: none;
+      }
+    }
+
+    @keyframes spin {
+      0% { transform: rotate(0deg); } /* 0 graus de rotação no início da animação */
+      100% { transform: rotate(360deg); } /* 360 graus de rotação no final da animação */
+    }
+  }
+
+  
+
+
+  .textarea-wrapper{
+    padding: 2rem;
+    width: 100%;
+    max-width: 864px;
+    height: 213px;
+    background: #f4f4f4;
+    border: 3px solid #999;
+    border-radius: 30px;
+    webkit-filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.08));
+    filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.08));
+    overflow: hidden;
+    margin: 3rem auto;
+    // margin-left: 0;
+
+    textarea{
+      width: 100%;
+      height: 100%;
+      background: transparent;
+      border: none;
+      color: #000000;
+      font-size: 2.5rem;
+      line-height: 3rem;
+      resize: none;
+    }
+  }
+
+  .challenge-click{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: auto;
+    border: none;
+    width: 244px;
+    height: 43px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding: 0 !important;
+    margin-top: 3.5rem;
+    // margin-left: 0;
+    margin-bottom: 6rem;
+    background-image: url("../data/imagens/bravend/button.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: transparent;
+  }
+
+  .challenge-click:hover{
+    -webkit-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+    background-image: url("../data/imagens/bravend/buttonHover.svg");
+  }
+
+  // Flipcard Icon
+// .flip-card-item-bravend{
+// 	&-icone {
+// 		min-height: 470px;
+
+// 		.flip-card-frente{
+// 			// Tokens
+// 			padding: $spacing-sm;
+
+// 			display: block;
+
+// 			.frente-interno{
+// 				padding: 0;
+// 				text-align: center;
+
+// 				.wrap-icone{
+// 					// Tokens
+// 					width: 200px;
+// 					height: 200px;
+// 					margin: $spacing-xxs auto $spacing-sm;
+// 					border-radius: $border-radius-circular;
+// 					background-color: $color-brand-01-lightest;
+					
+// 					display: flex;
+// 					align-items: center;
+// 					justify-content: center;
+
+// 					.inner-icon{
+// 						width: 120px;
+// 						height: 120px;
+// 						display: flex;
+// 						align-items: center;
+// 						justify-content: center;
+// 						overflow: hidden;
+
+// 						i{
+// 							font-size: 110px;
+// 							color: $color-brand-01-dark;
+// 						}
+// 					}
+// 				}
+				
+// 				h5{
+// 					// Tokens
+// 					color: $color-brand-05-darkest;
+// 					margin-bottom: $spacing-sm;
+// 				}
+// 			}
+
+// 			.icone-status{
+// 				width: 48px;
+// 				justify-content: center;
+// 				padding: 0;
+// 				margin: 0 auto;
+// 			}
+// 		}
+
+// 		.flip-card-verso{
+// 			.verso-interno{
+// 				h5{
+// 					// Tokens
+// 					margin-top: $spacing-sm;
+// 				}
+// 			}
+// 		}
+
+// 		&.destaque{
+// 			.flip-card-frente{
+// 				// Tokens
+// 				background-color: $color-brand-05-darkest;
+
+// 				.wrap-icone{
+// 					// Tokens
+// 					background-color: rgba($color-brand-01-normal, $opacity-level-lightest);
+// 				}
+
+// 				.frente-interno{
+// 					h5{
+// 						// Tokens
+// 						color: $color-neutral-00;
+// 					}
+// 				}
+// 			}
+
+// 			.flip-card-verso{
+// 				// Tokens
+// 				background-color: $color-brand-05-dark;
+// 				color: $color-neutral-00;
+
+// 				h5{
+// 					// Tokens
+// 					color: $color-neutral-00;
+// 				}
+// 			}
+// 		}
+// 	}
+// }
+
+// ínicio accordion
+.accordion-bravend {
+  background: transparent;
+
+  .accordion-item {
+      position: relative;
+      list-style-type: none;
+
+      // Tokens
+      color: $color-neutral-100;
+
+      ~ .accordion-item{
+          // Tokens
+          margin-top: $spacing-quark;
+      }
+
+      .accordion-title {
+          text-decoration: none;
+          border: none;
+
+          // Tokens - Shape
+          background-color: #EC0000;
+
+          &.colorBlack{
+            background-color: #000;
+          }
+
+          // Tokens - Text
+          font-family: $font-family-display;
+          font-weight: $font-weight-400;
+          font-size: $font-size-xs;
+          color: $color-title-default;
+          border-top-left-radius: 155px;
+
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          // Tokens - Spacings
+          padding: $spacing-xxs;
+          padding-right: calc(3 * #{$spacing-xxs});
+
+          .numero, i{
+              display: block;
+
+              // Tokens
+              font-weight: $font-weight-300;
+          }
+          
+          // Number
+          .numero{
+              // Tokens
+              font-size: $font-size-xxl;
+              color: $color-brand-05-normal;
+              margin-bottom: $spacing-nano;
+          }
+
+          i{
+              // Tokens
+              font-size: $font-size-xxxl;
+              margin-bottom: $spacing-xxs;
+              color: #fff;
+              text-align: center;
+
+              &::before{
+                  margin: 0px;
+              }
+          }
+
+
+          &:hover{
+              // Tokens
+              //background-color: #000;
+          }
+
+          &:focus-visible{
+              -webkit-box-shadow: 0px 0px 0px $border-width-sm $color-focus;
+              box-shadow: 0px 0px 0px $border-width-sm $color-focus;
+              background-color: $color-brand-01-lightest;
+              outline: none;
+          }
+
+          .font-family-dyslexia &{
+              font-family: $font-family-base-accessible;
+          }
+
+          &::before {
+              font-family: "icones-index";
+              font-size: 24px;
+              margin-top: -0.7rem;
+              right: 266px;
+              transition: transform 0.3s ease;
+              content: "\e806";
+              color: #000;
+              background: #fff;
+              border-radius: 50px;
+              padding: 0.5rem;
+              filter: drop-shadow(5px 5px 10px #000000);
+          }
+
+          &.accordion-title-numero::before, 
+          &.accordion-title-icon::before{
+              // Tokens
+              top: 157px;
+
+              margin-top: 0;
+          }
+
+          
+      }
+
+      .accordion-content {
+          // Tokens
+          padding: $spacing-nano $spacing-xxs $spacing-xs;
+          padding-right: calc(3 * #{$spacing-xxs});
+          font-weight: $font-weight-400;
+          background-color: #EAE5E5;
+          color: #000;
+          border-bottom-right-radius: 155px;
+
+          border: 0;
+      }
+      
+      &.is-active {
+          // Tokens
+          //border-bottom: $border-width-xs solid $color-brand-05-darkest;
+          //background-color: $color-brand-05-lightest;
+          border-top-left-radius: 155px;
+
+          .accordion-title {
+              // Tokens
+              //background-color: #EC0000;
+              border-top-left-radius: 155px;
+              
+              &::before {
+                  transform: rotate(45deg);
+              }
+              
+              &.accordion-title-numero, 
+              &.accordion-title-icon{
+                  &::before{
+                      // Tokens
+                      top: 152px;
+                  }
+              }
+          }            
+      }
+
+      &:not(.is-active).seen {
+          .accordion-title::before { }
+      }
+  }
+
+  @include small-only{
+    margin-bottom: 60px;
+  }
+}
+// fim accordion
+
+// ínicio accordion
+.accordion-bravend-2 {
+  background: transparent;
+  list-style-type: none;
+
+  .accordion-item {
+      position: relative;
+
+      // Tokens
+      color: $color-neutral-100;
+
+      ~ .accordion-item{
+          // Tokens
+          margin-top: $spacing-quark;
+      }
+
+      .accordion-title {
+          text-decoration: none;
+          border: none;
+
+          // Tokens - Shape
+          background-color: #000;
+
+          // Tokens - Text
+          font-family: $font-family-display;
+          font-weight: $font-weight-400;
+          font-size: $font-size-xs;
+          color: #FFC800;
+
+          // Tokens - Spacings
+          padding: $spacing-xxs;
+          padding-right: calc(3 * #{$spacing-xxs});
+
+          .numero, i{
+              display: block;
+
+              // Tokens
+              font-weight: $font-weight-300;
+          }
+          
+          // Number
+          .numero{
+              // Tokens
+              font-size: $font-size-xxl;
+              color: $color-brand-05-normal;
+              margin-bottom: $spacing-nano;
+          }
+
+          i{
+              // Tokens
+              font-size: $font-size-lg;
+              margin-bottom: $spacing-xxs;
+              color: $color-brand-05-normal;
+
+              &::before{
+                  margin: 0px;
+              }
+          }
+
+
+          &:hover{
+              // Tokens
+              background-color: #1d1d1d;
+          }
+
+          &:focus-visible{
+              -webkit-box-shadow: 0px 0px 0px $border-width-sm $color-focus;
+              box-shadow: 0px 0px 0px $border-width-sm $color-focus;
+              background-color: $color-brand-01-lightest;
+              outline: none;
+          }
+
+          .font-family-dyslexia &{
+              font-family: $font-family-base-accessible;
+          }
+
+          &::before {
+              font-family: $font-icones-index;
+              font-size: 24px;
+              margin-top: -0.7rem;
+              right: $spacing-xxs;
+              transition: transform .3s ease;
+              content: "\0e806";
+
+              // Tokens
+              color: #FFC800;
+          }
+
+          &.accordion-title-numero::before, 
+          &.accordion-title-icon::before{
+              // Tokens
+              top: $spacing-xxs;
+
+              margin-top: 0;
+          }
+
+          
+      }
+
+      .accordion-content {
+          // Tokens
+          padding: 24px 24px 32px;
+          padding-right: calc(3 * #{$spacing-xxs});
+          font-weight: $font-weight-400;
+          //background-color: $color-brand-05-lightest;
+          color: $color-neutral-100;
+          
+
+          border: 0;
+
+          .text-icon{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            img{
+              margin-right: 20px;
+            }
+          }
+      }
+      
+      &.is-active {
+          // Tokens
+          //border-bottom: $border-width-xs solid $color-brand-05-darkest;
+          background-color: $color-brand-05-lightest;
+
+          .accordion-title {
+              // Tokens
+              background-color: #000;
+              
+              &::before {
+                  transform: rotate(45deg);
+              }
+              
+              &.accordion-title-numero, 
+              &.accordion-title-icon{
+                  &::before{
+                      // Tokens
+                      top: $spacing-xxs;
+                  }
+              }
+          }            
+      }
+
+      &:not(.is-active).seen {
+          .accordion-title::before { }
+      }
+  }
+}
+// fim accordion
+
+// ínicio accordion
+.accordion-bravend-3 {
+  background: transparent;
+  list-style-type: none;
+
+  .accordion-item {
+      position: relative;
+
+      // Tokens
+      color: $color-neutral-100;
+
+      ~ .accordion-item{
+          // Tokens
+          margin-top: $spacing-quark;
+      }
+
+      .accordion-title {
+          text-decoration: none;
+          border: none;
+
+          // Tokens - Shape
+          background-color: #000;
+
+          // Tokens - Text
+          font-family: $font-family-display;
+          font-weight: $font-weight-400;
+          font-size: $font-size-xs;
+          color: #fff;
+
+          // Tokens - Spacings
+          padding: $spacing-xxs;
+          padding-right: calc(3 * #{$spacing-xxs});
+
+          .numero, i{
+              display: block;
+
+              // Tokens
+              font-weight: $font-weight-300;
+          }
+          
+          // Number
+          .numero{
+              // Tokens
+              font-size: $font-size-xxl;
+              color: $color-brand-05-normal;
+              margin-bottom: $spacing-nano;
+          }
+
+          i{
+              // Tokens
+              font-size: $font-size-lg;
+              margin-bottom: $spacing-xxs;
+              color: $color-brand-05-normal;
+
+              &::before{
+                  margin: 0px;
+              }
+          }
+
+
+          &:hover{
+              // Tokens
+              background-color: #FFC800;
+          }
+
+          &:focus-visible{
+              -webkit-box-shadow: 0px 0px 0px $border-width-sm $color-focus;
+              box-shadow: 0px 0px 0px $border-width-sm $color-focus;
+              background-color: $color-brand-01-lightest;
+              outline: none;
+          }
+
+          .font-family-dyslexia &{
+              font-family: $font-family-base-accessible;
+          }
+
+          &::before {
+              font-family: $font-icones-index;
+              font-size: 24px;
+              margin-top: -0.7rem;
+              right: $spacing-xxs;
+              transition: transform .3s ease;
+              content: "\0e806";
+
+              // Tokens
+              color: #FFC800;
+
+          }
+
+          &.accordion-title-numero::before, 
+          &.accordion-title-icon::before{
+              // Tokens
+              top: $spacing-xxs;
+
+              margin-top: 0;
+          }
+
+          
+      }
+
+      .accordion-content {
+          // Tokens
+          padding: 24px 24px 32px;
+          padding-right: calc(3 * #{$spacing-xxs});
+          font-weight: $font-weight-400;
+          //background-color: $color-brand-05-lightest;
+          color: $color-neutral-100;
+          
+
+          border: 0;
+
+          .text-icon{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            img{
+              margin-right: 20px;
+            }
+          }
+      }
+      
+      &.is-active {
+          // Tokens
+          //border-bottom: $border-width-xs solid $color-brand-05-darkest;
+          background-color: $color-brand-05-lightest;
+
+          .accordion-title {
+              // Tokens
+              background-color: #FFC800;
+              color: #000;
+              
+              &::before {
+                  transform: rotate(45deg);
+              }
+              
+              &.accordion-title-numero, 
+              &.accordion-title-icon{
+                  &::before{
+                      // Tokens
+                      top: $spacing-xxs;
+                  }
+              }
+          }            
+      }
+
+      &:not(.is-active).seen {
+          .accordion-title::before { }
+      }
+  }
+}
+
+.btn-bravend{
+  background-image: url("../data/imagens/bravend/btn-bravend.png");
+  background-repeat: no-repeat;
+  width: 180px;
+  height: 43px;
+  cursor: pointer;
+
+  &:hover{
+    background-image: url("../data/imagens/bravend/btn-bravend-hover.png");
+  }
+}
+
+.card-destaque-bravend{
+  position: relative;
+  background-color: #FFC800;
+  width: 613px;
+  height: 646px;
+  padding: 4rem;
+  border-top-right-radius: 70px;
+  border-bottom-right-radius: 70px;
+  border-bottom-left-radius: 70px;
+  z-index: 2;
+
+  .bravend-destaque{
+    font-family: $font-family-base-bravend;
+    font-size: 2.5rem;
+    font-weight: 400;
+    margin-bottom: 1.2rem;
+    line-height: 50px;
+  }
+
+  @include small-only{
+    width: 100%;
+    height: auto;
+    padding: 2rem;
+    margin: auto;
+    margin-bottom: 20px;
+  
+  }
+}
+
+.content-destaque{
+    position: absolute;
+    background-color: #000;
+    width: 234px;
+    height: 185px;
+    top: 8%;
+    left: 18%;
+    z-index: 0;
+
+    @include small-only{
+      top: 11%;
+      left: 1%;
+    }
+}
+
+
+
+
+.icon-click{
+  display: flex;
+  align-items: center;
+  p{
+    margin-bottom: 0;
+  }
+
+  img{
+    margin-right: 10px;
+  }
+
+  @include small-only{
+    display: none;
+  }
+  
+}
+
+.flip-card-item-bravend {
+position: relative;
+max-width: 350px;
+margin-bottom: 20px;
+
+// Tokens - Image
+border-radius: $border-radius-xl;
+
+//caso exista um tema ativo
+  [class*=tema] &{
+      border-radius: var(--border-radius);
+  }
+
+// Label Flipcard
+.label-card{
+  // Tokens - 
+  font-weight: $font-weight-400;
+      font-size: $font-size-xxs;
+  color: $color-neutral-00;
+      margin-bottom: $spacing-xxxs;
+
+  .barra{
+    margin-right: 3px;
+
+    // Tokens - 
+    color: $color-brand-01-normal;
+  }
+  }
+
+// Titulo Card
+h5{
+  // Tokens
+  font-weight: $font-weight-500;
+  color: $color-neutral-00;
+  margin-bottom: $spacing-xxs;
+}
+
+// Flipcard Frente
+.flip-card-frente{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  // Tokens
+  font-family: $font-family-display;
+  padding: $spacing-xxxs;
+
+  .frente-interno{
+    // Tokens
+    padding: 0 $spacing-xxxs;
+  }
+
+  .icone-status{
+    // Tokens - 
+    background-color: $color-brand-01-normal;
+    border-radius: $border-radius-pill;
+    padding-right: $spacing-nano;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    height: 48px;
+
+    i{
+      font-size: 24px;
+      color: $color-brand-05-darkest;
+    }
+  }
+}
+
+// Flipcard Verso
+.flip-card-verso{
+  // Tokens
+  background-color: $color-neutral-00;
+  color: $color-brand-05-darkest;
+
+  .no-csstransforms3d & {
+    display: none;
+  }
+
+  .verso-interno{
+    // Tokens
+    padding: $spacing-sm;
+
+    height: 100%;
+
+    // &:after{
+    //   display: block;
+    //   content: '';
+    //   position: absolute;
+
+    //   // Tokens
+    //   bottom: $spacing-sm;
+    //   left: $spacing-sm;
+    //   width: calc(100% - (2 * #{$spacing-sm}));
+    //   height: 4px;
+    //   border-radius: $border-radius-sm;
+    //   background-color: $color-brand-01-dark;
+    // }
+
+    .label-card{
+      // Tokens
+      color: $color-brand-05-darkest;
+      margin: $spacing-sm 0 $spacing-xxs;
+    }
+
+    h5{
+      // Tokens
+      color: $color-brand-05-darkest;
+    }
+
+    & > :last-child{
+      // Tokens
+      margin-bottom: $spacing-sm;
+    }
+  }
+}
+
+.flip-card-frente,
+.flip-card-verso {
+  // Tokens
+  border-radius: $border-radius-xl;
+  @include shadow($shadow-level-4, $color-neutral-20, 1);
+
+  //caso exista um tema ativo
+  [class*=tema] &{
+    border-radius: var(--border-radius);
+  }
+  
+  position: absolute;
+  width: 100%;
+  cursor: pointer;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+
+  .frente-interno,
+  .verso-interno {
+    width: 100%;
+    position: relative;
+  }
+}
+
+// Flipcard clicado
+// &.seen {}
+
+&__destaque{
+  .flip-card-verso{
+    // Tokens
+    background-color: $color-brand-05-darkest;
+    color: $color-neutral-00;
+    
+    .verso-interno{
+      .label-card{
+        // Tokens
+        color: $color-brand-01-normal;
+      }
+
+      h5{
+        // Tokens
+        color: $color-neutral-00;
+      }
+    }
+  }
+}
+
+&__color{
+  .flip-card-verso{
+    // Tokens
+    background-color: $color-brand-01-normal;
+    color: $color-brand-05-darkest;
+
+    .verso-interno{
+      &:after{
+        // Tokens
+        background-color: $color-brand-05-darkest;
+      }
+
+      .label-card{
+        // Tokens
+        color: $color-brand-05-darkest;
+
+        .barra{
+          // Tokens
+          color: $color-brand-05-darkest;
+        }
+      }
+    }
+  }
+}
+}
+
+// Flipcard Icon
+.flip-card-item-bravend{
+&-icone-bravend {
+  min-height: 470px;
+
+  .flip-card-frente{
+    // Tokens
+    padding: $spacing-sm;
+
+    display: block;
+
+    .frente-interno{
+      padding: 0;
+      text-align: center;
+
+      .wrap-icone{
+        // Tokens
+        width: 200px;
+        height: 200px;
+        margin: $spacing-xxs auto $spacing-sm;
+        border-radius: $border-radius-circular;
+        background-color: $color-brand-01-lightest;
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .inner-icon{
+          width: 120px;
+          height: 120px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          overflow: hidden;
+
+          i{
+            font-size: 110px;
+            color: $color-brand-01-dark;
+          }
+        }
+      }
+      
+      h5{
+        // Tokens
+        color: $color-brand-05-darkest;
+        margin-bottom: $spacing-sm;
+      }
+    }
+
+    .icone-status{
+      width: 48px;
+      justify-content: center;
+      padding: 0;
+      margin: 0 auto;
+    }
+  }
+
+  .flip-card-verso{
+    .verso-interno{
+      h5{
+        // Tokens
+        margin-top: $spacing-sm;
+      }
+    }
+  }
+
+  &.destaque{
+    .flip-card-frente{
+      // Tokens
+      background-color: $color-brand-05-darkest;
+
+      .wrap-icone{
+        // Tokens
+        background-color: rgba($color-brand-01-normal, $opacity-level-lightest);
+      }
+
+      .frente-interno{
+        h5{
+          // Tokens
+          color: $color-neutral-00;
+        }
+      }
+    }
+
+    .flip-card-verso{
+      // Tokens
+      background-color: $color-brand-05-dark;
+      color: $color-neutral-00;
+
+      h5{
+        // Tokens
+        color: $color-neutral-00;
+      }
+    }
+  }
+}
+}
+
+
+// .bravend-card{
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   margin-bottom: 20px;
+//   max-width: 100%;
+
+//   .icone-bravend{
+//     width: 100%;
+//     background: #3D3D3D;
+//     height: 488px;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     border-bottom-left-radius: 60px;
+//     border-top-left-radius: 60px;
+//     padding: 104px;
+//   }
+
+//   .card-template-bravend{
+//     background: #EAE5E5;
+//       display: flex;
+//       justify-content: center;
+//       align-items: center;
+//       padding: 3rem;
+  
+//       .bravend-paragraphy-card{
+//         font-size: 2.1rem;
+//       }
+//   }
+  
+// }
+
+.bravend-card {
+  display: flex;
+  justify-content: center;
+  align-items: stretch; /* Estende os itens verticalmente */
+  margin-bottom: 20px;
+  max-width: 100%;
+
+  .icone-bravend {
+    flex: 0.4; /* Faz com que o item cresça proporcionalmente */
+    background: #3D3D3D;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom-left-radius: 60px;
+    border-top-left-radius: 60px;
+    padding: 2rem; /* Ajuste o padding conforme necessário */
+
+    @include small-only{
+      border-bottom-left-radius: 0;
+      border-top-left-radius: 0;
+      border-top-right-radius: 60px;
+      border-top-left-radius: 60px;
+    }
+  }
+
+  .card-template-bravend {
+    flex: 1; /* Faz com que o item cresça proporcionalmente */
+    background: #EAE5E5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+
+    .bravend-paragraphy-card {
+      font-size: 2.1rem;
+
+      @include small-only{
+        font-size: 1.3rem;
+      }
+    }
+
+    @include small-only{
+      border-bottom-right-radius: 60px;
+      border-bottom-left-radius: 60px;
+    }
+  }
+
+  @include small-only{
+    flex-direction: column;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+  }
+}
+
+
+
+
+// .bravend-card-2{
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   margin-bottom: 20px;
+//   max-width: 100%;
+
+//   .icone-bravend{
+//     width: 100%;
+//     background: #EC0000;
+//     height: 488px;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     padding: 104px;
+//   }
+
+//   .card-template-bravend{
+//     background: #EAE5E5;
+//       display: flex;
+//       justify-content: center;
+//       align-items: center;
+//       padding: 3rem;
+//       border-bottom-left-radius: 60px;
+//       border-top-left-radius: 60px;
+  
+//       .bravend-paragraphy-card{
+//         font-size: 2.1rem;
+//       }
+//   }
+  
+// }
+
+
+.bravend-card-2 {
+  display: flex;
+  justify-content: center;
+  align-items: stretch; /* Estende os itens verticalmente */
+  margin-bottom: 20px;
+  max-width: 100%;
+
+  .icone-bravend {
+    flex: 0.4; /* Faz com que o item cresça proporcionalmente */
+    background: #EC0000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem; /* Ajuste o padding conforme necessário */
+    border-bottom-right-radius: 60px;
+    border-top-right-radius: 60px;
+
+    @include small-only{
+      border-bottom-right-radius: 0;
+      border-top-right-radius: 0;
+      border-top-right-radius: 60px;
+      border-top-left-radius: 60px;
+    }
+  }
+
+  .card-template-bravend {
+    flex: 1; /* Faz com que o item cresça proporcionalmente */
+    background: #EAE5E5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+    
+
+    .bravend-paragraphy-card {
+      font-size: 2.1rem;
+
+      @include small-only{
+        font-size: 1.3rem;
+      }
+    }
+
+    @include small-only{
+      border-bottom-right-radius: 60px;
+      border-bottom-left-radius: 60px;
+    }
+  }
+
+  @include small-only{
+    flex-direction: column-reverse;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+  }
+}
+
+.card-desafio-bravend{
+  width: 730px;
+  height: 726px;
+  padding: 4rem;
+  background-color: #FFC800;
+
+  &.color{
+    background-color: #EAE5E5;
+  }
+
+  @include small-only{
+    padding: 1rem;
+    width: auto;
+    height: auto;
+    background-color: #FFC800;
+  }
+
+  .card-desafio-title{
+    font-family: $font-family-base-bravend;
+    font-size: 2.5rem;
+    font-weight: 900;
+    margin-bottom: 1.2rem;
+    line-height: 40px;
+    width: 360px;
+  }
+
+  .bravend-paragraphy-desafio{
+    font-family: $font-family-base-bravend;
+    font-size: 1.8rem;
+    font-weight: 300;
+    line-height: 40px;
+    width: 360px;
+  }
+
+  .img-bravend-desafio{
+    position: absolute;
+    top: 30%;
+    left: 42%;
+
+    @include small-only{
+      display: none;
+    }
+
+    &.card2{
+      top: 14%;
+    }
+  }
+
+  .img-bravend-desafio-mobile{
+    display: none;
+
+    @include small-only{
+      display: block;
+    }
+  }
+
+}
+
+.tabs-desk{
+  @include small-only{
+    display: none;
+  }
+}
+
+.card-desafio-bravend-2{
+  width: 730px;
+  height: 726px;
+  padding: 4rem;
+  background-color: #EAE5E5;
+
+  .card-desafio-title{
+    font-family: $font-family-base-bravend;
+    font-size: 2.5rem;
+    font-weight: 900;
+    margin-bottom: 1.2rem;
+    line-height: 40px;
+    width: 360px;
+  }
+
+  .bravend-paragraphy-desafio{
+    font-family: $font-family-base-bravend;
+    font-size: 1.8rem;
+    font-weight: 300;
+    line-height: 40px;
+    width: 360px;
+  }
+
+  .img-bravend-desafio{
+    position: absolute;
+    top: 13%;
+    left: 42%;
+
+
+  }
+
+}
+
+.badge-wrapper{
+  position: relative;
+  max-height: 786px;
+  min-height: 581px;
+  overflow: hidden;
+
+  .mobile-video{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    @include small-only{
+      position: relative;
+    }
+  }
+}
+
+.bravend-badge-none{
+  display: none;
+}
+
+.bravend-badges{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 6rem;
+}
+
+.img-encerramento-bravend{
+  @include small-only{
+    margin-bottom: 20px;
+  }
+}

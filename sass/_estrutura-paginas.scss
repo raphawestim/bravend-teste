@@ -1,0 +1,1267 @@
+%sr-only {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	white-space: nowrap;
+	border: 0;
+}
+
+.pagina {
+	width: 100%;
+	min-height: 100vh;
+	padding-top: $headerHeight;
+	background-color: #E2D8D9;
+}
+
+.bloco {
+	// Tokens
+	padding-top: $distance-between-blocks;
+	padding-bottom: $distance-between-blocks;
+
+	position: relative;
+	width: 100%;
+
+	&.sem-espacamento {
+		padding: 0;
+
+		&-topo {
+			padding-top: 0;
+		}
+
+		&-base {
+			padding-bottom: 0;
+		}
+	}
+
+	&__topo {
+		min-height: 100dvh;
+		background-color: $color-brand-02-dark;
+		color: $color-neutral-00;
+		display: flex;
+		align-items: center;
+		.row {
+			width: 100%;
+		}
+		h1 {
+			color: $color-neutral-00;
+		}
+	}
+
+	&__bravend{
+		background-color: #E2D8D9;
+		padding-bottom: 20rem;
+	}
+
+	&__bravend2{
+		background-image: url("../data/imagens/bravend/background-middle.png");
+		background-size: auto;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-color: #FFFAE5;
+
+		.icon-asterisk-black {
+			position: absolute;
+			width: 56px;
+			height: 56px;
+			left: 167px;
+			top: 41px;
+			animation: zoomInOut 1s infinite alternate; /* Adicione uma animação chamada "zoomInOut" */
+
+			@include small-only{
+				display: none;
+			}
+
+			@include medium-down{
+				display: none;
+			}
+		}
+		
+		.icon-asterisk-black-2 {
+			position: absolute;
+			width: 56px;
+			height: 56px;
+			left: 706px;
+			top: 581px;
+			animation: zoomInOut 1s infinite alternate; /* Adicione a mesma animação "zoomInOut" com uma duração diferente */
+
+			@include small-only{
+				display: none;
+			}
+
+			@include medium-down{
+				display: none;
+			}
+		}
+
+		.static-star-yellow{
+			position: absolute;
+			width: 70px;
+			height: 70px;
+			left: 259px;
+			top: 764px;
+
+			@include small-only{
+				display: none;
+			}
+		}
+		
+		@keyframes zoomInOut {
+			0% {
+					transform: scale(1); /* Tamanho inicial */
+			}
+			100% {
+					transform: scale(1.2); /* Tamanho final (zoom in) */
+			}
+		}
+
+	}
+
+	&__bravend3{
+		background-image: url("../data/imagens/bravend/background-middle2.png");
+		background-size: auto;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-color: #FFFFFF;
+
+		.static-star-yellow{
+			position: absolute;
+			width: 70px;
+			height: 70px;
+			right: 123px;
+			top: 692px;
+
+			@include small-only{
+				display: none;
+			}
+
+		}
+
+	}
+
+	&__bravend4{
+    background-color: #EAE5E5;
+
+		.bullet-background{
+			position: absolute;
+			width: 397px;
+			height: 264px;
+			right: -5%;
+			top: 2%;
+
+			@include small-only{
+				display: none;
+			}
+
+			@include large-only{
+				display: none;
+			}
+		}
+
+		.cruz-vermelha{
+			position: absolute;
+			width: 51px;
+			height: 52px;
+			right: 3%;
+			top: 38%;
+			animation: zoomInOut 1s infinite alternate; /* Adicione a mesma animação "zoomInOut" com uma duração diferente */
+
+			@include small-only{
+				display: none;
+			}
+		}
+
+		.estrela-vermelha{
+			position: absolute;
+			width: 79px;
+			height: 79px;
+			right: 15%;
+    	top: 71%;
+			animation: zoomInOut 1s infinite alternate; /* Adicione a mesma animação "zoomInOut" com uma duração diferente */
+
+			@include small-only{
+				display: none;
+			}
+		}
+
+		@keyframes zoomInOut {
+			0% {
+					transform: scale(1); /* Tamanho inicial */
+			}
+			100% {
+					transform: scale(1.2); /* Tamanho final (zoom in) */
+			}
+		}
+
+	}
+
+	&__bravend5{
+    background-color: #FFFAE5;
+
+		.static-star-yellow{
+			position: absolute;
+			width: 70px;
+			height: 70px;
+			right: 5%;
+			top: 5%;
+
+			@include small-only{
+				display: none;
+			}
+		}
+
+		.star-yellow{
+			position: absolute;
+			width: 70px;
+			height: 70px;
+			right: 19%;
+			top: 50%;
+			animation: zoomInOut 1s infinite alternate; /* Adicione a mesma animação "zoomInOut" com uma duração diferente */
+
+			@include small-only{
+				display: none;
+			}
+		}
+
+		@keyframes zoomInOut {
+			0% {
+					transform: scale(1); /* Tamanho inicial */
+			}
+			100% {
+					transform: scale(1.2); /* Tamanho final (zoom in) */
+			}
+		}
+
+	}
+
+	&__bravend6{
+    background-image: url("../data/imagens/bravend/background-middle3.png");
+		background-size: auto;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-color: #FFFFFF;
+
+		.estrela-black{
+			position: absolute;
+			width: 58px;
+			height: 58px;
+			right: 4%;
+			top: 47%;
+			animation: zoomInOut 1s infinite alternate; /* Adicione a mesma animação "zoomInOut" com uma duração diferente */
+
+			@include small-only{
+				display: none;
+			}
+		}
+
+		@keyframes zoomInOut {
+			0% {
+					transform: scale(1); /* Tamanho inicial */
+			}
+			100% {
+					transform: scale(1.2); /* Tamanho final (zoom in) */
+			}
+		}
+
+	}
+
+	&__bravend7{
+    background-image: url("../data/imagens/bravend/background-middle4.png");
+		background-size: auto;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-color: #9BC3D3;
+
+		.bullet-background{
+			position: absolute;
+			width: 397px;
+			height: 264px;
+			left: -4%;
+			top: 4%;
+
+			@include small-only{
+				display: none;
+			}
+			 
+			@include large-only{
+				opacity: 0.4;
+			}
+		}
+
+		.static-star-black{
+			position: absolute;
+			width: 70px;
+			height: 70px;
+			left: 4%;
+    	top: 59%;
+
+			@include small-only{
+				display: none;
+			}
+		}
+
+	}
+
+	&__bravend8{
+    background-color: #EAE5E5;
+
+		.background-bullets-white{
+			position: absolute;
+			width: 230px;
+			height: 319px;
+			right: 2%;
+			top: 2%;
+
+			@include small-only{
+				display: none;
+			}
+
+			@include large-only{
+				opacity: 0.4;
+			}
+		}
+
+		.cruz-vermelha{
+			position: absolute;
+			width: 51px;
+			height: 52px;
+			right: 13%;
+    	top: 93%;
+			animation: zoomInOut 1s infinite alternate; /* Adicione a mesma animação "zoomInOut" com uma duração diferente */
+
+			@include small-only{
+				display: none;
+			}
+		}
+
+		.estrela-vermelha{
+			position: absolute;
+			width: 79px;
+			height: 79px;
+			right: 6%;
+			top: 53%;
+			animation: zoomInOut 1s infinite alternate; /* Adicione a mesma animação "zoomInOut" com uma duração diferente */
+
+			@include small-only{
+				display: none;
+			}
+		}
+
+		@keyframes zoomInOut {
+			0% {
+					transform: scale(1); /* Tamanho inicial */
+			}
+			100% {
+					transform: scale(1.2); /* Tamanho final (zoom in) */
+			}
+		}
+
+	}
+
+	&__bravend9{
+    background-image: url("../data/imagens/bravend/line-background.png");
+		background-size: auto;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-color: #fff;
+
+		.background-bullets-red{
+			position: absolute;
+			width: 595px;
+			height: 280px;
+			right: 0%;
+    	top: -4%;
+
+			@include small-only{
+				display: none;
+			}
+
+			// @include large-only{
+			// 	display: none;
+			// }
+		}
+
+		.cruz-vermelha{
+			position: absolute;
+			width: 51px;
+			height: 52px;
+			right: 84%;
+			top: 26%;
+			animation: zoomInOut 1s infinite alternate; /* Adicione a mesma animação "zoomInOut" com uma duração diferente */
+
+			@include small-only{
+				display: none;
+			}
+		}
+
+		.estrela-vermelha{
+			position: absolute;
+			width: 79px;
+			height: 79px;
+			right: 12%;
+    	top: 62%;
+			animation: zoomInOut 1s infinite alternate; /* Adicione a mesma animação "zoomInOut" com uma duração diferente */
+
+			@include small-only{
+				display: none;
+			}
+		}
+
+		@keyframes zoomInOut {
+			0% {
+					transform: scale(1); /* Tamanho inicial */
+			}
+			100% {
+					transform: scale(1.2); /* Tamanho final (zoom in) */
+			}
+		}
+
+	}
+
+	&__bravend10{
+    background-image: url("../data/imagens/bravend/background-middle5.png");
+		background-size: auto;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-color: #FFFAE5;
+
+		.icon-asterisk-black-2{
+			position: absolute;
+			width: 56px;
+			height: 56px;
+			right: 167px;
+			top: 821px;
+			animation: zoomInOut 1s infinite alternate;
+
+			@include small-only{
+				display: none;
+			}
+		}
+
+		@keyframes zoomInOut {
+			0% {
+					transform: scale(1); /* Tamanho inicial */
+			}
+			100% {
+					transform: scale(1.2); /* Tamanho final (zoom in) */
+			}
+		}
+
+		.static-star-yellow{
+			position: absolute;
+			width: 70px;
+			height: 70px;
+			left: 200px;
+    	top: 264px;
+
+			@include small-only{
+				display: none;
+			}
+		}
+
+	}
+
+	&__bravend11{
+    background-image: url("../data/imagens/bravend/background-middle6.png");
+		background-size: auto;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-color: #9BC3D3;
+
+		.background-bullets-black-3{
+			position: absolute;
+			width: 355px;
+			height: 312px;
+
+			@include small-only{
+				display: none;
+			}
+
+			@include large-only{
+				display: none;
+			}
+		}
+
+		.background-bullets-black-4{
+			position: absolute;
+			width: 355px;
+			height: 312px;
+			right: 0;
+			top: 78%;
+
+			@include small-only{
+				display: none;
+			}
+		}
+
+		.cruz-black{
+			position: absolute;
+			width: 56px;
+			height: 56px;
+			top: 31%;
+			left: 11%;
+			animation: zoomInOut 1s infinite alternate;
+
+			@include small-only{
+				display: none;
+			}
+		}
+
+		.estrela-white{
+			position: absolute;
+			width: 79px;
+			height: 79px;
+			left: 20%;
+    	top: 85%;
+			animation: zoomInOut 1s infinite alternate;
+
+			@include small-only{
+				display: none;
+			}
+		}
+
+		.estrela-white-2{
+			position: absolute;
+			width: 79px;
+			height: 79px;
+			right: 10%;
+    	top: 40%;
+			animation: zoomInOut 1s infinite alternate;
+
+			@include small-only{
+				display: none;
+			}
+		}
+
+		.cruz-black-2{
+			position: absolute;
+			width: 56px;
+			height: 56px;
+			right: 12%;
+			top: 70%;
+			animation: zoomInOut 1s infinite alternate;
+
+			@include small-only{
+				display: none;
+			}
+		}
+
+		@keyframes zoomInOut {
+			0% {
+					transform: scale(1); /* Tamanho inicial */
+			}
+			100% {
+					transform: scale(1.2); /* Tamanho final (zoom in) */
+			}
+		}
+
+	}
+
+	&__bravend12{
+    background-image: url("../data/imagens/bravend/background-middle7.png");
+		background-size: auto;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-color: #FFF;
+
+		.estrela-vermelha{
+			position: absolute;
+			width: 79px;
+			height: 79px;
+			left: 1%;
+    	top: 4%;
+			animation: zoomInOut 1s infinite alternate;
+
+			@include small-only{
+				display: none;
+			}
+			@include large-only{
+				display: none;
+			}
+		}
+
+		.estrela-vermelha-2{
+			position: absolute;
+			width: 79px;
+			height: 79px;
+			right: 3%;
+			top: 28%;
+			animation: zoomInOut 1s infinite alternate;
+
+			@include small-only{
+				display: none;
+			}
+
+			@include large-only{
+				display: none;
+			}
+		}
+
+		.estrela-vermelha-3{
+			position: absolute;
+			width: 79px;
+			height: 79px;
+			right: 2%;
+			top: 50%;
+			animation: zoomInOut 1s infinite alternate;
+
+			@include small-only{
+				display: none;
+			}
+
+			@include large-only{
+				display: none;
+			}
+		}
+
+		.estrela-vermelha-4{
+			position: absolute;
+			width: 79px;
+			height: 79px;
+			left: 2%;
+    	top: 61%;
+			animation: zoomInOut 1s infinite alternate;
+
+			@include small-only{
+				display: none;
+			}
+
+			@include large-only{
+				display: none;
+			}
+		}
+
+		.estrela-black{
+			position: absolute;
+			width: 79px;
+			height: 79px;
+			right: 3%;
+			top: 80%;
+			animation: zoomInOut 1s infinite alternate;
+
+			@include small-only{
+				display: none;
+			}
+
+			@include large-only{
+				display: none;
+			}
+		}
+
+		@keyframes zoomInOut {
+			0% {
+					transform: scale(1); /* Tamanho inicial */
+			}
+			100% {
+					transform: scale(1.2); /* Tamanho final (zoom in) */
+			}
+		}
+	}
+
+	&__bravend13{
+    background-image: url("../data/imagens/bravend/background-middle8.png");
+		background-size: auto;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-color: #D9D9D9 ;
+
+		.static-star-black{
+			position: absolute;
+			width: 70px;
+			height: 70px;
+			left: 7%;
+    	top: 23%;
+
+			@include small-only{
+				display: none;
+			}
+
+			@include large-only{
+				display: none;
+			}
+		}
+
+		.cruz-black{
+			position: absolute;
+			width: 38px;
+			height: 38px;
+			right: 16%;
+			top: 85%;
+			animation: zoomInOut 1s infinite alternate;
+
+			@include small-only{
+				display: none;
+			}
+		}
+
+		@keyframes zoomInOut {
+			0% {
+					transform: scale(1); /* Tamanho inicial */
+			}
+			100% {
+					transform: scale(1.2); /* Tamanho final (zoom in) */
+			}
+		}
+
+	}
+
+	&__bravend14{
+    background-image: url("../data/imagens/bravend/background-middle9.png");
+		background-size: auto;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-color: #9BC3D3;
+
+		.background-bullets-white{
+			position: absolute;
+			// width: 397px;
+			// height: 201px;
+			left: 2%;
+			opacity: 0.5;
+
+			@include small-only{
+				display: none;
+			}
+
+			@include large-only{
+				display: none;
+			}
+		}
+
+		.background-bullets-white-2{
+			position: absolute;
+			// width: 522px;
+			// height: 196px;
+			right: 2%;
+			top: 74%;
+
+			@include small-only{
+				display: none;
+			}
+		}
+
+	}
+
+	&__bravend15{
+    background-color: #EAE5E5 ;
+
+		.estrela-vermelha{
+			position: absolute;
+			width: 79px;
+			height: 79px;
+			left: 2%;
+			animation: zoomInOut 1s infinite alternate;
+
+			@include small-only{
+				display: none;
+			}
+
+			@include large-only{
+				display: none;
+			}
+		}
+
+		.cruz-vermelha{
+			position: absolute;
+			width: 51px;
+			height: 51px;
+			left: 16%;
+			top: 32%;
+			animation: zoomInOut 1s infinite alternate;
+
+			@include small-only{
+				display: none;
+			}
+		}
+
+		.estrela-vermelha-right{
+			position: absolute;
+			width: 79px;
+			height: 79px;
+			right: 6%;
+			top: 40%;
+			animation: zoomInOut 1s infinite alternate;
+
+			@include small-only{
+				display: none;
+			}
+
+			@include large-only{
+				display: none;
+			}
+		}
+
+		.cruz-vermelha-right{
+			position: absolute;
+			width: 51px;
+			height: 51px;
+			right: 15%;
+    	top: 66%;
+			animation: zoomInOut 1s infinite alternate;
+
+			@include small-only{
+				display: none;
+			}
+
+			@include large-only{
+				display: none;
+			}
+		}
+
+		@keyframes zoomInOut {
+			0% {
+					transform: scale(1); /* Tamanho inicial */
+			}
+			100% {
+					transform: scale(1.2); /* Tamanho final (zoom in) */
+			}
+		}
+
+	}
+
+	&__bravend16{
+    background-color: #FFC800 ;
+
+		.static-star-black{
+			position: absolute;
+			width: 70px;
+			height: 70px;
+			left: 7%;
+    	top: 23%;
+
+			@include small-only{
+				display: none;
+			}
+			@include large-only{
+				display: none;
+			}
+		}
+
+		.cruz-black{
+			position: absolute;
+			width: 38px;
+			height: 38px;
+			right: 16%;
+			top: 85%;
+			animation: zoomInOut 1s infinite alternate;
+
+			@include small-only{
+				display: none;
+			}
+		}
+
+		@keyframes zoomInOut {
+			0% {
+					transform: scale(1); /* Tamanho inicial */
+			}
+			100% {
+					transform: scale(1.2); /* Tamanho final (zoom in) */
+			}
+		}
+
+	}
+
+	&__bravend17{
+    background-image: url("../data/imagens/bravend/background-middle10.png");
+		background-size: auto;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-color: #FFF ;
+		padding-top: 30rem;
+		padding-bottom: 10rem;
+
+		@include small-only{
+			padding-top: 2rem;
+		}
+
+		.background-bullet{
+			position: absolute;
+			// width: 397px;
+			//height: 201px;
+			left: 1%;
+			top: 18%;
+			opacity: 0.5;
+
+			@include small-only{
+				display: none;
+			}
+
+			@include large-only{
+				display: none;
+			}
+		}
+	}
+
+	&__bravend18{
+    background-color: #EAE5E5 ;
+		position: relative;
+
+		.bullet-white-background{
+			position: absolute;
+			right: 1%;
+			top: 1%;
+
+			@include small-only{
+				display: none;
+			}
+
+			@include large-only{
+				display: none;
+			}
+		}
+
+		.estrela-vermelha{
+			position: absolute;
+			left: 7%;
+			top: 7%;
+			animation: zoomInOut 1s infinite alternate;
+
+			@include small-only{
+				display: none;
+			}
+
+			@include large-only{
+				display: none;
+			}
+		}
+
+		.cruz-vermelha{
+			position: absolute;
+			left: 18%;
+			top: 39%;
+			animation: zoomInOut 1s infinite alternate;
+
+			@include small-only{
+				display: none;
+			}
+			@include large-only{
+				display: none;
+			}
+		}
+
+		.estrela-vermelha-right{
+			position: absolute;
+			right: 4%;
+    	top: 70%;
+			animation: zoomInOut 1s infinite alternate;
+
+			@include small-only{
+				display: none;
+			}
+		}	
+
+		.cruz-vermelha-right{
+			position: absolute;
+			right: 10%;
+			top: 92%;
+			animation: zoomInOut 1s infinite alternate;
+
+			@include small-only{
+				display: none;
+			}
+		}
+
+		@keyframes zoomInOut {
+			0% {
+					transform: scale(1); /* Tamanho inicial */
+			}
+			100% {
+					transform: scale(1.2); /* Tamanho final (zoom in) */
+			}
+		}
+
+	}
+
+	&__bravend19{
+		background-image: url("../data/imagens/bravend/background-middle11.png");
+		background-size: auto;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-color: #FFC800 ;
+
+		.static-star-black{
+			position: absolute;
+			right: 5%;
+			top: 5%;
+
+			@include small-only{
+				display: none;
+			}
+		}
+
+	}
+
+	&__bravend20{
+    background-color: #000 ;
+	}
+
+
+
+	&__destaque-bravend{
+		background-image: url("../data/imagens/bravend/background-img.png");
+		background-repeat: no-repeat;
+	}
+	&__final {
+		background-color: $color-brand-02-dark;
+		color: $color-neutral-00;
+		h1 {
+			color: $color-neutral-00;
+		}
+	}
+
+	.row-mobile-component{
+		display: none;
+
+		@include small-only{
+			display: block;
+		
+	}
+
+	}
+
+	> .row {
+		+ .row {
+			margin-top: 40px;
+			@include medium-up {
+				margin-top: 60px;
+			}
+		}
+
+		@include small-only{
+			.row-tab{
+				display: none;
+			}
+			.row-mobile-component{
+				display: block;
+			}
+		}
+	}
+}
+
+.instrucao-navegacao {
+	position: relative;
+	text-align: center;
+	padding: 0 15px;
+
+	*:last-child {
+		margin-bottom: 0;
+	}
+
+	&-conteudo {
+		position: relative;
+		display: inline-block;
+		border-radius: 4px;
+		padding: 10px 20px;
+		background: #3366ff;
+		color: #fff;
+		font-size: .8889em;
+		max-width: 600px;
+		@include medium-up {
+			width: 50%;
+		}
+
+		&::after {
+			content: "";
+			display: block;
+			width: 0;
+			height: 0;
+			border-bottom: 8px solid #3366ff;
+			border-left: 8px solid transparent;
+			border-right: 8px solid transparent;
+			position: absolute;
+			top: -8px;
+			left: calc(50% - 8px);
+		}
+	}
+
+	[class*="icon"] {
+		display: block;
+		font-size: 32px;
+		@include medium-up {
+			display: inline-block;
+			vertical-align: middle;
+		}
+	}
+
+	.instrucao {
+		@include medium-up {
+			display: inline-block;
+			vertical-align: middle;
+		}
+	}
+}
+
+.bloco-podcast {
+	position: relative;
+	display: table;
+	table-layout: fixed;
+	height: 100vh;
+	width: 100%;
+	
+	&-imagem {
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 1;
+		width: 100%;
+		height: 100%;
+		background-size: auto 125%;
+		background-position: center top;
+		background-repeat: no-repeat;
+		opacity: .66;
+
+		&::before {
+			content: "";
+			display: block;
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background-color: rgba(#fff, .66);
+		}
+	}
+
+	&-conteudo {
+		position: relative;
+		z-index: 2;
+		display: table-cell;
+		vertical-align: bottom;
+		width: 100%;
+	}
+
+	.icone {
+		font-size: 30px;
+		margin-bottom: 10px;
+	}
+
+	[class*="titulo"] {
+		text-transform: uppercase;
+		font-weight: bold;
+		margin-bottom: 28px;
+	}
+}
+
+.bloco-podcast-bravend {
+	position: relative;
+	// display: table;
+	// table-layout: fixed;
+	height: 100vh;
+	width: 100%;
+	
+	&-imagem {
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 1;
+		width: 100%;
+		height: 100%;
+		background-size: auto 125%;
+		background-position: center top;
+		background-repeat: no-repeat;
+		opacity: .66;
+
+		&::before {
+			content: "";
+			display: block;
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background-color: rgba(#fff, .66);
+		}
+	}
+
+	&-conteudo {
+		position: relative;
+		z-index: 2;
+		display: table-cell;
+		vertical-align: bottom;
+		width: 100%;
+	}
+
+	.icone {
+		font-size: 30px;
+		margin-bottom: 10px;
+	}
+
+	[class*="titulo"] {
+		text-transform: uppercase;
+		font-weight: bold;
+		margin-bottom: 28px;
+	}
+}
+
+.img-wrap-radius{
+	border-radius: $border-radius-xl;
+	overflow: hidden;
+	display: inline-table;
+	margin-left: auto;
+	margin-right: auto;
+
+	//caso exista um tema ativo
+    [class*=tema] &{
+        border-radius: var(--border-radius-img);
+    }
+
+	+ p{
+		margin-top: $spacing-xxs;
+	}
+}
+
+.img-wrap-radius-bravend{
+	border-radius: $border-radius-xl;
+	overflow: hidden;
+	display: inline-table;
+	margin-left: auto;
+	margin-right: auto;
+
+	//caso exista um tema ativo
+    [class*=tema] &{
+        border-radius: var(--border-radius-img);
+    }
+
+	+ p{
+		margin-top: $spacing-xxs;
+	}
+}
+
+.texto-wrap-coluna{
+	padding-right: $spacing-xs;
+	
+	&-left{
+		padding-right: 0;
+		padding-left: $spacing-xs;
+	}
+}
+
+.linha-divisoria{
+    height: 2px;
+    width: 96px;
+	border: 0;
+	margin-left: 0;
+	margin-right: 0;
+
+	// Tokens
+    background-color: $color-neutral-20;
+    margin-bottom: $spacing-xs;
+}
+
+.linha-divisoria-maior{
+	@extend .linha-divisoria;
+	width: 100%;
+}
+
+.linha-imagem-texto{
+	border: 0;
+
+	// Tokens
+	margin: $spacing-nano 0 $spacing-xxs;
+	height: $spacing-quark;
+	background-color: $color-brand-01-dark;
+	border-radius: $border-radius-pill;
+}

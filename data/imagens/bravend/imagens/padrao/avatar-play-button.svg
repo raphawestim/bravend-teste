@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="292" height="292" viewBox="0 0 292 292">
+  <defs>
+    <style>
+      .cls-1 {
+        opacity: 0.96;
+      }
+
+      .cls-2, .cls-4 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        opacity: 0;
+      }
+
+      .cls-3, .cls-6 {
+        fill: none;
+      }
+
+      .cls-3 {
+        stroke: #fff;
+        stroke-width: 16px;
+      }
+
+      .cls-5 {
+        stroke: none;
+      }
+    </style>
+  </defs>
+  <g id="avatar_play_button" class="cls-1" transform="translate(8562.611 4402.611)">
+    <circle id="area" class="cls-2" cx="146" cy="146" r="146" transform="translate(-8562.611 -4402.611)"/>
+    <g id="Ellipse_1029" data-name="Ellipse 1029" class="cls-3" transform="translate(-8491.611 -4331.611)">
+      <circle class="cls-5" cx="75.5" cy="75.5" r="75.5"/>
+      <circle class="cls-6" cx="75.5" cy="75.5" r="67.5"/>
+    </g>
+    <path id="Polygon_1" data-name="Polygon 1" class="cls-4" d="M32.408,5.461a6,6,0,0,1,9.184,0L65.707,34.138A6,6,0,0,1,61.115,44H12.885a6,6,0,0,1-4.592-9.862Z" transform="translate(-8388.611 -4292.611) rotate(90)"/>
+  </g>
+</svg>

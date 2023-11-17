@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="175.391" height="227.823" viewBox="0 0 175.391 227.823">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Caminho_174" data-name="Caminho 174" d="M286.841,102.5a16.67,16.67,0,0,0-3.31,18.853h8.024a10,10,0,1,1,14.14-14.14V99.189a16.681,16.681,0,0,0-18.853,3.31" transform="translate(-281.961 -97.62)" fill="#3d3d3d"/>
+    </clipPath>
+    <clipPath id="clip-path-2">
+      <path id="Caminho_175" data-name="Caminho 175" d="M336.227,139.467a10,10,0,0,1-16.663,9.9v8.024a16.668,16.668,0,0,0,23.067-19.768,3.333,3.333,0,0,0-6.4,1.848" transform="translate(-319.565 -135.223)" fill="#3d3d3d"/>
+    </clipPath>
+    <clipPath id="clip-path-3">
+      <path id="Caminho_170" data-name="Caminho 170" d="M634.232,454.206l12.136-7.686-12.136-13.312Z" transform="translate(-634.232 -433.208)"/>
+    </clipPath>
+    <clipPath id="clip-path-4">
+      <path id="Caminho_998" data-name="Caminho 998" d="M87.557,535.941,0,485.39v33.521l87.557,50.547,87.557-50.547V485.39Z" transform="translate(0 -485.39)"/>
+    </clipPath>
+    <clipPath id="clip-path-5">
+      <path id="Caminho_1000" data-name="Caminho 1000" d="M87.557,535.941,0,485.39v33.521l87.557,50.547,87.557-50.547V485.39Z" transform="translate(0 -485.39)" fill="#7f96a1"/>
+    </clipPath>
+    <clipPath id="clip-path-6">
+      <path id="Caminho_169" data-name="Caminho 169" d="M0,446.52l12.33,7.686v-21Z" transform="translate(0 -433.208)"/>
+    </clipPath>
+  </defs>
+  <g id="Grupo_2760" data-name="Grupo 2760" transform="translate(0 1.5)">
+    <g id="Grupo_2735" data-name="Grupo 2735" transform="translate(0 0)">
+      <path id="Caminho_997" data-name="Caminho 997" d="M125.924,0a22.975,22.975,0,0,0-11.409,3.08L63.122,32.753a22.993,22.993,0,0,0-11.5,19.913V181.645l74.387,42.947L200.4,181.645V52.666a22.993,22.993,0,0,0-11.5-19.913L137.508,3.081A22.976,22.976,0,0,0,126.1,0Z" transform="translate(-38.354 -0.001)" fill="none" stroke="#3d3d3d" stroke-width="3"/>
+      <rect id="Retângulo_1183" data-name="Retângulo 1183" width="175.113" height="224.592" transform="translate(0.277 0)" fill="none"/>
+      <g id="Grupo_2729" data-name="Grupo 2729" transform="translate(72.209 29.988)">
+        <g id="Grupo_1836" data-name="Grupo 1836" transform="translate(0 0)">
+          <g id="Grupo_384" data-name="Grupo 384" clip-path="url(#clip-path)">
+            <rect id="Retângulo_150" data-name="Retângulo 150" width="25.054" height="23.733" transform="translate(-1.321 -0.001)" fill="#3d3d3d"/>
+          </g>
+        </g>
+        <g id="Grupo_1835" data-name="Grupo 1835" transform="translate(9.594 9.593)">
+          <g id="Grupo_386" data-name="Grupo 386" clip-path="url(#clip-path-2)">
+            <rect id="Retângulo_151" data-name="Retângulo 151" width="24.713" height="25.055" transform="translate(0 0)" fill="#3d3d3d"/>
+          </g>
+        </g>
+      </g>
+      <g id="Grupo_2730" data-name="Grupo 2730" transform="translate(162.977 110.517)">
+        <g id="Grupo_380" data-name="Grupo 380" clip-path="url(#clip-path-3)">
+          <path id="Caminho_1001" data-name="Caminho 1001" d="M.784.655,19.75,0l-.784,24.206L0,24.861Z" transform="translate(-7.899 2.953) rotate(-23.155)"/>
+        </g>
+      </g>
+      <g id="Grupo_2732" data-name="Grupo 2732" transform="translate(0 123.83)" clip-path="url(#clip-path-5)">
+        <path id="Caminho_999" data-name="Caminho 999" d="M0,0H175.337V84.535H0Z" transform="matrix(1, -0.003, 0.003, 1, -0.224, 0.001)" fill="#3d3d3d"/>
+      </g>
+      <g id="Grupo_2734" data-name="Grupo 2734" transform="translate(0 110.517)">
+        <g id="Grupo_378" data-name="Grupo 378" clip-path="url(#clip-path-6)">
+          <path id="Caminho_1002" data-name="Caminho 1002" d="M.547.655,24.808,0l-.547,19.219L0,19.873Z" transform="translate(-7.849 17.997) rotate(-66.845)"/>
+        </g>
+        <g id="Grupo_401" data-name="Grupo 401" clip-path="url(#clip-path-6)" style="mix-blend-mode: color;isolation: isolate">
+          <path id="Caminho_1003" data-name="Caminho 1003" d="M.547.655,24.808,0l-.547,19.219L0,19.873Z" transform="translate(-7.849 17.997) rotate(-66.845)"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
